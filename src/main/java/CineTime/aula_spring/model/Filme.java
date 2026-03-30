@@ -1,19 +1,17 @@
 package CineTime.aula_spring.model;
 
-public record Filme(
-    String nomeDoFilme,
-    String genero,
-    String filmeUrl
-) 
-{
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-    public Object getTitulo() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getTitulo'");
-    }
-    
+@EntityScan
+
+public record Filme(
+    String nome,
+    Integer ano,
+    String genero
+){
 
 
 }
+    
 
 
